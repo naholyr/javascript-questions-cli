@@ -83,7 +83,9 @@ const showQuestion = async q => {
     }))
   })
   process.stdout.write('\n')
-  if (q.answer === choice) {
+  if (choice === undefined) {
+    return null
+  } else if (q.answer === choice) {
     process.stdout.write(chalk.green.bold('\tCORRECT!'))
   } else {
     process.stdout.write(chalk.red.bold('\tINCORRECT!'))
@@ -180,6 +182,9 @@ const main = async (lang = 'en') => {
   while (state.index < quizz.length) {
     const q = quizz[state.index]
     const choice = await showQuestion(q)
+    if (choice === null) {
+      break // Pressed Ctrl+C or Ctrl+D
+    }
     state.history.push({ choice, valid: q.answer === choice })
     state.index++
     // There are more questions: ask to stop/continue
