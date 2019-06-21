@@ -1,0 +1,22 @@
+{
+  "name": "javascript-questions-cli",
+  "version": "1.0.0",
+  "description": "JavaScript quizz, right in your terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "js-questions": "./index.js"
+  },
+  "author": "Nicolas Chambrier <naholyr@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "got": "^9.6.0",
+    "marked": "^0.6.2",
+    "marked-terminal": "^3.2.0",
+    "prompts": "^2.1.0",
+    "user-home": "^2.0.0"
+  }
+}
