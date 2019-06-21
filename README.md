@@ -8,6 +8,8 @@ Takes questions from [lydiahallie/javascript-questions](https://github.com/lydia
 npx javascript-questions-cli [lang]
 ```
 
+![javascript-questions-cli](https://raw.githubusercontent.com/naholyr/javascript-questions-cli/master/screenshot.png)
+
 ### Supported languages:
 
 - `en` (default)
