@@ -1,6 +1,6 @@
 {
   "name": "javascript-questions-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "JavaScript quizz, right in your terminal",
   "main": "index.js",
   "scripts": {
