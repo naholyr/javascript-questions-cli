@@ -12,12 +12,12 @@ const path = require('path')
 const RESUME_FILE = path.join(home, '.javascript-questions-cli')
 
 const prefixes = {
-  en: '',
-  ru: '_ru-RU',
-  vi: '-vi',
-  de: '-de_DE',
+  en: 'en-EN',
+  ru: 'ru-RU',
+  vi: 'vi-VI',
+  de: 'de-DE',
   // zh: '-zh_CN', // disabled due to parsing errors at this point
-  bs: '-bs_BS'
+  bs: 'bs-BS'
 }
 
 const cleanup = s => s.trim().replace(/<i>(.*)<\/i>|<em>(.*)<\/em>/, '*$1*')
@@ -30,8 +30,7 @@ const getQuizz = async (lang = 'en') => {
       `Unsupported lang, supported: ${Object.keys(prefixes).join(', ')}`
     )
   }
-  const url = `https://raw.githubusercontent.com/lydiahallie/javascript-questions/master/README${prefix ||
-    ''}.md`
+  const url = `https://raw.githubusercontent.com/lydiahallie/javascript-questions/master/${prefix || 'en-EN'}/README.md`
   const { body } = await got(url)
   return body
     .split(/---|\* \* \* \* \*/)
