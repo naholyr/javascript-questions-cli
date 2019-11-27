@@ -10,7 +10,9 @@ npx javascript-questions-cli [lang]
 
 ![javascript-questions-cli](https://raw.githubusercontent.com/naholyr/javascript-questions-cli/master/screenshot.png)
 
-### Supported languages:
+[![asciicast](https://asciinema.org/a/K4kf6hUk6iNP0a137qTsr9c7W.svg)](https://asciinema.org/a/K4kf6hUk6iNP0a137qTsr9c7W)
+
+## Supported languages
 
 - `en` (default)
 - `ru`
