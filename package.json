@@ -12,11 +12,11 @@
   "author": "Nicolas Chambrier <naholyr@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "got": "^9.6.0",
-    "marked": "^0.6.2",
-    "marked-terminal": "^3.2.0",
-    "prompts": "^2.1.0",
+    "marked": "^0.7.0",
+    "marked-terminal": "^3.3.0",
+    "prompts": "^2.3.0",
     "user-home": "^2.0.0"
   }
 }
