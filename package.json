@@ -14,7 +14,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "got": "^9.6.0",
-    "marked": "^0.6.2",
+    "marked": "^0.7.0",
     "marked-terminal": "^3.2.0",
     "prompts": "^2.1.0",
     "user-home": "^2.0.0"
